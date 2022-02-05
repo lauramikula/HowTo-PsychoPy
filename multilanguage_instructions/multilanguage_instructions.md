@@ -125,7 +125,7 @@ Here, the instructions are set through a code component because we want the inst
 
 ![Change text in code element](./img/changeTxt_code.png "Change text in code element")
 
-In this example, `instrCode = myText.trialList[0][whichText]` for the 1st block and `instrCode = myText.trialList[1][whichText]` for the subsequent blocks.
+In this example, `instrText.text = myText.trialList[0][whichText]` for the 1st block and `instrText.text = myText.trialList[1][whichText]` for the subsequent blocks.
 
 ##### 2. Inside text elements
 
