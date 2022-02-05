@@ -26,9 +26,9 @@ The Excel spreadsheet should have **only 1** tab (everything outside the 1st tab
 - Save the document as **.xlsx**
 - Make sure to put the Excel document in the same directory as the **.psyexp** file of the PsychoPy experiment
 
-![Excel spreadsheet](/img/excel_sheet1.png "Excel spreadsheet")
+![Excel spreadsheet](./img/excel_sheet1.png "Excel spreadsheet")
 
-<img src="/img/excel_sheet_path.png" width="400">
+<img src="./img/excel_sheet_path.png" width="400">
 
 ---
 
@@ -49,14 +49,14 @@ In this example:
 - `language` = EN for English
 - `language` = FR for French
 
-![Experiment settings - Basic](/img/settings_basic.png "Experiment settings - Basic")
+![Experiment settings - Basic](./img/settings_basic.png "Experiment settings - Basic")
 
 
 #### Tab *Online*
 
 Add the Excel document as an additional resource.
 
-![Experiment settings - Online](/img/settings_online.png "Experiment settings - Online")
+![Experiment settings - Online](./img/settings_online.png "Experiment settings - Online")
 
 
 ### 2. Change the code inside the experiment
@@ -67,7 +67,7 @@ Add the Excel document as an additional resource.
 - Go to the **Begin Experiment** tab
 - Set **Code Type** to `JS` (JavaScript)
 
-![Extract text from Excel](/img/getText.png "Extract text from Excel")
+![Extract text from Excel](./img/getText.png "Extract text from Excel")
 
 - Copy and paste the following code:
 
@@ -108,7 +108,7 @@ In this example:
 -  `myText.trialList[1][whichText]` = instructions for the subsequent blocks of trials
 -  `myText.trialList[2][whichText]` = end message of the experiment
 
-![Excel spreadsheet](/img/excel_sheet2.png "Excel spreadsheet")
+![Excel spreadsheet](./img/excel_sheet2.png "Excel spreadsheet")
 
 <br>
 
@@ -123,7 +123,7 @@ Here, the instructions are set through a code component because we want the inst
 - find where the text is defined, most of the time it's in the **Begin Routine** or the **Each Frame** tabs
 - look for something that looks like `<name_of_variable>.text =` and replace what is after "=" by `myText.trialList[i][whichText]`; *i being a numeric index*
 
-![Change text in code element](/img/changeTxt_code.png "Change text in code element")
+![Change text in code element](./img/changeTxt_code.png "Change text in code element")
 
 In this example, `instrCode = myText.trialList[0][whichText]` for the 1st block and `instrCode = myText.trialList[1][whichText]` for the subsequent blocks.
 
@@ -134,7 +134,7 @@ If the text is defined directly using the text component.
 - in the **Basic** tab, delete what's inside the text box and replace with `$myText.trialList[i][whichText]`; *i being a numeric index.* <span style="color:red">/!\ </span> *Don't forget the `$` at the beginning, it tells Psychopy it is code and not just regular text*
 - make sure the right dropdown menu is set to **constant**
 
-![Change text in text element](/img/changeTxt_text.png "Change text in text element")
+![Change text in text element](./img/changeTxt_text.png "Change text in text element")
 
 <br>
 
@@ -143,7 +143,7 @@ If the text is defined directly using the text component.
 - Save your project: **File > Save**
 - Export into HTLM to update .js and .html files: **File > Export HTML**
 
-![Save and export](/img/save_export.png "Save and export")
+![Save and export](./img/save_export.png "Save and export")
 
 ---
 
@@ -153,8 +153,8 @@ When running the experiment, fill in the **touchscreen** and **language** fields
 
 For English without touchscreen:
 
-<img src="/img/EN_0_info.png" height="250" hspace="25"> <img src="/img/EN_0.png" height="250">
+<img src="./img/EN_0_info.png" height="250" hspace="25"> <img src="./img/EN_0.png" height="250">
 
 For French with touchscreen:
 
-<img src="/img/FR_1_info.png" height="250" hspace="25"> <img src="/img/FR_1.png" height="250">
+<img src="./img/FR_1_info.png" height="250" hspace="25"> <img src="./img/FR_1.png" height="250">
