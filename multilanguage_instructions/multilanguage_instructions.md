@@ -71,7 +71,7 @@ Add the Excel document as an additional resource.
 
 - Copy and paste the following code:
 
-```
+```js
 textFile = "gonogo_text.xlsx"
 
 myText = new TrialHandler({
