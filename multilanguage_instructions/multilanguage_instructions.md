@@ -17,7 +17,7 @@ In this example, we want to have 4 different sets of instructions depending on:
 
 The sets of instructions are stored in a spreadsheet so it is easier to reference them in PsychoPy later.
 
-The Excel spreadsheet should have **only 1** tab (everything outside the 1st tab won't be read).
+The Excel spreadsheet should have **only 1 tab** (everything outside the 1st tab won't be read).
 
 - Prepare the headers
   - On the first row: enter a code for the device and the language used (e.g., EN_touchscreen for English and touchscreen device).
@@ -63,6 +63,7 @@ Add the Excel document as an additional resource.
 
 #### 2.1. Insert a new code component
 
+- Go to the very beginning og the experiment (**setup** routine)
 - Insert a code component named `getText` to extract and store a list of messages from the Excel document
 - Go to the **Begin Experiment** tab
 - Set **Code Type** to `JS` (JavaScript)
@@ -72,6 +73,8 @@ Add the Excel document as an additional resource.
 - Copy and paste the following code:
 
 ```js
+//get instruction text from excel spreadsheet
+
 textFile = "gonogo_text.xlsx"
 
 myText = new TrialHandler({
@@ -158,3 +161,7 @@ For English without touchscreen:
 For French with touchscreen:
 
 <img src="./img/FR_1_info.png" height="250" hspace="25"> <img src="./img/FR_1.png" height="250">
+
+If you see an error similar to the one below, try to move your Excel spreadsheet to the folder **html/resources** of your PsychoPy experiment.
+
+<img src="./img/error.png" height="200">
