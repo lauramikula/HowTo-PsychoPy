@@ -1,4 +1,3 @@
-
 # How to add multilanguage instructions to a PsychoPy task
 
 This documentation explains how to add multilanguage instructions to an existing PsychoPy task.
@@ -63,7 +62,7 @@ Add the Excel document as an additional resource.
 
 #### 2.1. Insert a new code component
 
-- Go to the very beginning og the experiment (**setup** routine)
+- Go to the very beginning of the experiment (**setup** routine)
 - Insert a code component named `getText` to extract and store a list of messages from the Excel document
 - Go to the **Begin Experiment** tab
 - Set **Code Type** to `JS` (JavaScript)
