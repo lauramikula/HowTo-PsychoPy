@@ -55,3 +55,9 @@ if (expInfo['group'].indexOf("EDS_") >= 0) {
 - If there is something written inside the `Completed URL` and `Incomplete URL` fields, delete it
 
 <img src="./img/remove_URLs.png" width="750">
+
+- Save the experiment and export HTML.
+
+This is what the "End of Experiment" message box now looks like for the **EDS_sober** and **EDS_high** groups.
+
+<img src="./img/new_msgbox.png" width="275">
